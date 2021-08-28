@@ -13,15 +13,17 @@ header nav {
     align-items: center;
 }
 
+nav a {
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
 img {
     width: 100%;
     height: 100%;
-}
-
-main {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 3em;
 }
 
 .imagen-principal {
@@ -58,17 +60,6 @@ main {
     transform: translate(0%, 50%);
 }
 
-.lista-imagenes {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-}
-
-.lista-imagenes li {
-    position: relative;
-    margin-bottom: 3em;
-}
-
 .overlay {
     position: absolute;
     content: '';
@@ -79,28 +70,20 @@ main {
     background-color: rgba(233, 150, 122, 0.25);
 }
 
-.elemento-nav {
-    margin-left: 20px;
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    }
+.titulo-principal {
+    font-size: 30px;
+    }
+.lista-imagenes {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    }
+.lista-imagenes li {
+    position: relative;
+    margin-bottom: 20px;
 }
 
-.elemento-nav:last-child {
-    margin-right: 20px;
-}
-
-.busqueda {
-    outline: 0;
-    border: none;
-    padding: 7px;
-    border-radius: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
-    transition: all 0.5s ease;
-}
-
-.busqueda:focus {
-    box-shadow: 0 2px 5px rgba(255, 160, 207, 0.75);
-}
-
-.link {
-    width: 20px;
-    height: 20px;
-}
